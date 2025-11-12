@@ -1,0 +1,13 @@
+.employees-container { max-width: 1100px; margin: 0 auto; padding: 30px; }
+.employees-header h1 { margin: 0 0 6px 0; }
+.employees-main { display:flex; gap:24px; }
+.employees-list { flex:1; background:#fff; padding:18px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.04);} 
+.employees-list ul { list-style:none; padding:0; margin:0; }
+.employees-list li { padding:12px; border-bottom:1px solid #f0f0f0; display:flex; gap:12px; align-items:center; }
+.emp-name { font-weight:700; }
+.emp-dept { font-size:13px; color:#666; }
+.employees-form { width:320px; background:#fff; padding:18px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.04);} 
+.employees-form label { display:block; margin-top:10px; font-size:13px; }
+.employees-form input { width:100%; padding:8px; margin-top:6px; border:1px solid #ddd; border-radius:4px; }
+.btn-primary { background:#002147; color:white; padding:10px 14px; border:none; border-radius:6px; cursor:pointer; }
+.btn-primary:disabled { opacity:0.6; cursor:default; }

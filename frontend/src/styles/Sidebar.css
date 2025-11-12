@@ -1,0 +1,126 @@
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #073763 0%, #002147 100%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 18px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.12);
+}
+
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  font-size: 18px;
+  background: rgba(255,255,255,0.06);
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.app-name {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+.sidebar-nav {
+  display: block;
+  margin-top: 24px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 8px;
+}
+
+.sidebar-nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.sidebar-nav a:hover {
+  background: rgba(255,255,255,0.06);
+  transform: translateX(4px);
+}
+
+.sidebar-bottom {
+  margin-top: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--navy, #002147);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.user-details .user-name {
+  font-weight: 700;
+}
+
+.user-details .user-email {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logout-button:hover { opacity: 0.95; transform: translateY(-1px); }
+
+/* make space for the sidebar in the main layout */
+.has-sidebar { margin-left: 240px; }
+
+.topbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 24px;
+  background: #f6f8fb;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.profile-area { display: flex; align-items: center; gap: 12px; }
+.profile-name { font-weight: 700; color: #002147; }
+.profile-icon { width: 40px; height: 40px; border-radius: 50%; background: #ffffff; color: #002147; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; }
